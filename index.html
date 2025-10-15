@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,24 +30,22 @@
     .section-title{display:flex;justify-content:space-between;align-items:center}
     .print-btn{margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#071022;font-weight:600;border:none;cursor:pointer}
     footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
-    /* responsive */
     @media (max-width:840px){.grid{grid-template-columns:1fr}.contact{text-align:left;margin-top:12px}.avatar{width:72px;height:72px;flex:0 0 72px}}
-    /* print */
     @media print{body{background:white;color:black} .container{box-shadow:none;border-radius:0;background:white} .card{background:transparent;box-shadow:none} .print-btn, footer{display:none} }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="avatar">MZ</div>
+      <div class="avatar">MW</div>
       <div>
-        <h1>Matt Zhang</h1>
-        <div class="title">Senior Executive Assistant</div>
+        <h1>Muhamad Warsono</h1>
+        <div class="title">Programmer & Web Developer</div>
       </div>
       <div class="contact">
-        <div>📞 123-456-7890</div>
-        <div>✉️ <a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></div>
-        <div>🔗 <a href="https://www.reallygreatsite.com" target="_blank" rel="noopener">www.reallygreatsite.com</a></div>
+        <div>📞 0852 5751 0992</div>
+        <div>✉️ <a href="mailto:mwarsono21@gmail.com">mwarsono21@gmail.com</a></div>
+        <div>🔗 <a href="https://uccritae.github.io/" target="_blank" rel="noopener">uccritae.github.io</a></div>
       </div>
     </header>
 
@@ -55,31 +53,41 @@
       <main>
         <section class="card">
           <div class="section-title">
-            <h2>Summary</h2>
-            <div class="date">Bachelor of Business Management</div>
+            <h2>Ringkasan</h2>
+            <div class="date">Lulusan Teknik Informatika</div>
           </div>
-          <p class="lead">Executive assistant with five years of experience optimizing efficiency, productivity, and service quality across multiple environments. Reliable support specialist that blends advanced organizational, technical, and business acumen.</p>
+          <p class="lead">Programmer dan Web Developer dengan pengalaman membangun aplikasi web menggunakan PHP (CodeIgniter, Laravel) dan aplikasi mobile menggunakan Flutter. Memiliki kemampuan dalam manajemen basis data, pengembangan API, serta keamanan aplikasi web. Berpengalaman juga dalam pengelolaan jaringan LAN/WAN, router MikroTik, dan switch Cisco.</p>
         </section>
 
         <section class="card" style="margin-top:16px">
-          <div class="section-title"><h2>Work Experience</h2><div class="date">2012 — 2022</div></div>
-
+          <div class="section-title"><h2>Work Experience</h2><div class="date">2011 — Sekarang</div></div>
           <article style="margin-top:8px">
-            <strong>Administrative Manager</strong> — <em>Fradel and Spies</em>
-            <div class="date">2012 – 2016</div>
+            <strong>IT Staff</strong> — <em>IKIP PGRI Bojonegoro</em>
+            <div class="date">2011 – Sekarang</div>
             <ul>
-              <li>Managed CRM database including troubleshooting, maintenance, updates, and report generation.</li>
-              <li>Oversaw office inventory activities.</li>
+              <li>Mengembangkan dan memelihara aplikasi web berbasis PHP (CodeIgniter, Laravel), Flutter, dan JavaScript (Vue.js).</li>
+              <li>Mengelola dan memonitor jaringan lokal (LAN/WAN), router MikroTik, dan switch Cisco.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Projects</h2>
+          <article style="margin-top:8px">
+            <strong>Aplikasi SIAKAD Kampus</strong> — <em>IKIP PGRI Bojonegoro</em>
+            <div class="date">2023 – Sekarang</div>
+            <ul>
+              <li>Membangun aplikasi Sistem Informasi Akademik berbasis Android menggunakan Flutter dan API CodeIgniter 3.</li>
+              <li>Melakukan pemeliharaan dan pengembangan fitur baru.</li>
             </ul>
           </article>
 
-          <article style="margin-top:12px">
-            <strong>Senior Executive Assistant</strong> — <em>Arowwai Industries</em>
-            <div class="date">2017 – 2022</div>
+          <article style="margin-top:8px">
+            <strong>Aplikasi Panah Srikandi</strong> — <em>Dinas Kependudukan dan Catatan Sipil Bojonegoro</em>
+            <div class="date">2023 – 2024</div>
             <ul>
-              <li>Worked independently and efficiently with minimal supervision.</li>
-              <li>Gathered, assembled, and analyzed information and data from a wide variety of sources.</li>
-              <li>Responsible for daily executive support and calendar management.</li>
+              <li>Mengembangkan aplikasi Panah Srikandi untuk mendukung pelayanan administrasi kependudukan.</li>
+              <li>Mengintegrasikan sistem aplikasi dengan notifikasi otomatis melalui WhatsApp.</li>
             </ul>
           </article>
         </section>
@@ -87,47 +95,51 @@
         <section class="card" style="margin-top:16px">
           <h2>Education</h2>
           <div style="margin-top:6px">
-            <strong>Salford &amp; Co. University</strong>
-            <div class="date">2008 – 2012</div>
-            <div>Bachelor of Business Management</div>
+            <strong>Universitas Darul ‘Ulum Jombang</strong>
+            <div class="date">2007 – 2011</div>
+            <div>Teknik Informatika</div>
           </div>
         </section>
-
       </main>
 
       <aside>
         <div class="card">
           <h2>Contact</h2>
-          <div style="margin-top:8px">📞 123-456-7890</div>
-          <div style="margin-top:6px">✉️ <a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a></div>
-          <div style="margin-top:6px">🌐 <a href="https://www.reallygreatsite.com" target="_blank" rel="noopener">www.reallygreatsite.com</a></div>
-
+          <div style="margin-top:8px">📞 0852 5751 0992</div>
+          <div style="margin-top:6px">✉️ <a href="mailto:mwarsono21@gmail.com">mwarsono21@gmail.com</a></div>
+          <div style="margin-top:6px">🌐 <a href="https://uccritae.github.io/" target="_blank" rel="noopener">uccritae.github.io</a></div>
           <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
         </div>
 
         <div class="card" style="margin-top:16px">
           <h2>Skills</h2>
           <div class="skills" style="margin-top:8px">
-            <span class="skill">Event Planning</span>
-            <span class="skill">Communication</span>
-            <span class="skill">Calendar Management</span>
-            <span class="skill">Time Management</span>
+            <span class="skill">PHP</span>
+            <span class="skill">CodeIgniter</span>
+            <span class="skill">Laravel</span>
+            <span class="skill">Flutter</span>
+            <span class="skill">Vue.js</span>
+            <span class="skill">REST API</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Keamanan Web</span>
+            <span class="skill">MikroTik</span>
+            <span class="skill">Cisco</span>
           </div>
         </div>
 
         <div class="card" style="margin-top:16px">
-          <h2>Highlights</h2>
+          <h2>Sertifikat</h2>
           <ul style="margin-top:8px">
-            <li>Managed CRM systems and reporting.</li>
-            <li>Strong organizational and analytical skills.</li>
-            <li>Experienced in executive-level support.</li>
+            <li>MikroTik Certified Network Associate (MTCNA) – MikroTik Academy, 2019</li>
+            <li>AWS Technical Essentials & Architecting on AWS Associate – Trainocate Indonesia, 2020</li>
+            <li>Security Monitoring Dengan Wazuh Batch 2 – Taalenta, 2024</li>
           </ul>
         </div>
       </aside>
     </div>
 
     <footer>
-      Generated for GitHub Pages — save this file as <code>index.html</code> in your repository to publish.
+      Dibuat untuk GitHub Pages — simpan file ini sebagai <code>index.html</code> di repo <code>uccritae.github.io</code> untuk menayangkan halaman.
     </footer>
   </div>
 </body>
