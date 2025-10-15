@@ -1,145 +1,159 @@
-<!doctype html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muhamad Warsono — CV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhamad Warsono | Programmer & System Administrator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass: rgba(255,255,255,0.04)}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071022 0%, #071422 60%);color:#e6eef6}
-    .container{max-width:900px;margin:36px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    header{display:flex;gap:20px;align-items:center}
-    .avatar{width:96px;height:96px;border-radius:12px;flex:0 0 96px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#071022}
-    h1{margin:0;font-size:28px}
-    .title{color:var(--muted);margin-top:6px}
-    .contact{margin-left:auto;text-align:right;font-size:14px}
-    a{color:var(--accent);text-decoration:none}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02)}
-    h2{margin:0 0 12px 0;font-size:16px}
-    p.lead{margin:0;color:var(--muted)}
-    ul{padding-left:18px;margin:8px 0}
-    li{margin:6px 0}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
-    .date{font-size:13px;color:var(--muted);margin-bottom:8px}
-    .section-title{display:flex;justify-content:space-between;align-items:center}
-    .print-btn{margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#071022;font-weight:600;border:none;cursor:pointer}
-    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
-    @media (max-width:840px){.grid{grid-template-columns:1fr}.contact{text-align:left;margin-top:12px}.avatar{width:72px;height:72px;flex:0 0 72px}}
-    @media print{body{background:white;color:black} .container{box-shadow:none;border-radius:0;background:white} .card{background:transparent;box-shadow:none} .print-btn, footer{display:none} }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    header {
+      text-align: center;
+      border-bottom: 3px solid #222;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    header h2 {
+      font-size: 1em;
+      color: #555;
+      letter-spacing: 3px;
+      margin-top: 5px;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .left, .right {
+      flex: 1;
+      min-width: 300px;
+    }
+    h3 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      font-weight: 600;
+      margin-top: 25px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    ul li {
+      margin: 6px 0;
+    }
+    .contact li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .projects li {
+      margin-bottom: 10px;
+    }
+    .bold {
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="avatar">MW</div>
-      <div>
-        <h1>Muhamad Warsono</h1>
-        <div class="title">Programmer & Web Developer</div>
-      </div>
-      <div class="contact">
-        <div>📞 0852 5751 0992</div>
-        <div>✉️ <a href="mailto:mwarsono21@gmail.com">mwarsono21@gmail.com</a></div>
-        <div>🔗 <a href="https://uccritae.github.io/" target="_blank" rel="noopener">uccritae.github.io</a></div>
-      </div>
+      <h1>MUHAMAD WARSONO</h1>
+      <h2>PROGRAMMER & SYSTEM ADMINISTRATOR</h2>
     </header>
 
-    <div class="grid">
-      <main>
-        <section class="card">
-          <div class="section-title">
-            <h2>Ringkasan</h2>
-            <div class="date">Lulusan Teknik Informatika</div>
-          </div>
-          <p class="lead">Programmer dan Web Developer dengan pengalaman membangun aplikasi web menggunakan PHP (CodeIgniter, Laravel) dan aplikasi mobile menggunakan Flutter. Memiliki kemampuan dalam manajemen basis data, pengembangan API, serta keamanan aplikasi web. Berpengalaman juga dalam pengelolaan jaringan LAN/WAN, router MikroTik, dan switch Cisco.</p>
-        </section>
+    <div class="content">
+      <div class="left">
+        <h3>CONTACT</h3>
+        <ul class="contact">
+          <li>📞 0852 5751 0992</li>
+          <li>✉️ mwarsono21@gmail.com</li>
+          <li>📍 Ngampel, Kapas - Bojonegoro</li>
+          <li>🌐 https://mwarsono21.github.io</li>
+        </ul>
 
-        <section class="card" style="margin-top:16px">
-          <div class="section-title"><h2>Work Experience</h2><div class="date">2011 — Sekarang</div></div>
-          <article style="margin-top:8px">
-            <strong>IT Staff</strong> — <em>IKIP PGRI Bojonegoro</em>
-            <div class="date">2011 – Sekarang</div>
-            <ul>
-              <li>Mengembangkan dan memelihara aplikasi web berbasis PHP (CodeIgniter, Laravel), Flutter, dan JavaScript (Vue.js).</li>
-              <li>Mengelola dan memonitor jaringan lokal (LAN/WAN), router MikroTik, dan switch Cisco.</li>
-            </ul>
-          </article>
-        </section>
+        <h3>EXPERIENCE</h3>
+        <p class="bold">IT Staff<br>IKIP PGRI Bojonegoro (2011 – Present)</p>
+        <ul>
+          <li>Database administration and website design</li>
+          <li>Developed and maintained web applications</li>
+          <li>Managed and monitored local networks</li>
+        </ul>
 
-        <section class="card" style="margin-top:16px">
-          <h2>Projects</h2>
-          <article style="margin-top:8px">
-            <strong>Aplikasi SIAKAD Kampus</strong> — <em>IKIP PGRI Bojonegoro</em>
-            <div class="date">2023 – Sekarang</div>
-            <ul>
-              <li>Membangun aplikasi Sistem Informasi Akademik berbasis Android menggunakan Flutter dan API CodeIgniter 3.</li>
-              <li>Melakukan pemeliharaan dan pengembangan fitur baru.</li>
-            </ul>
-          </article>
+        <h3>EDUCATION</h3>
+        <p class="bold">Bachelor of Informatics Engineering<br>Universitas Darul ‘Ulum Jombang (2007 – 2011)</p>
 
-          <article style="margin-top:8px">
-            <strong>Aplikasi Panah Srikandi</strong> — <em>Dinas Kependudukan dan Catatan Sipil Bojonegoro</em>
-            <div class="date">2023 – 2024</div>
-            <ul>
-              <li>Mengembangkan aplikasi Panah Srikandi untuk mendukung pelayanan administrasi kependudukan.</li>
-              <li>Mengintegrasikan sistem aplikasi dengan notifikasi otomatis melalui WhatsApp.</li>
-            </ul>
-          </article>
-        </section>
+        <h3>CERTIFICATE</h3>
+        <ul>
+          <li>MikroTik Certified Network Associate (MTCNA) – MikroTik Academy, 2019</li>
+          <li>AWS Technical Essentials & Architecting on AWS Associate – Trainocate Indonesia, 2020</li>
+          <li>Security Monitoring with Wazuh Batch 2 – Taalenta, 2024</li>
+        </ul>
+      </div>
 
-        <section class="card" style="margin-top:16px">
-          <h2>Education</h2>
-          <div style="margin-top:6px">
-            <strong>Universitas Darul ‘Ulum Jombang</strong>
-            <div class="date">2007 – 2011</div>
-            <div>Teknik Informatika</div>
-          </div>
-        </section>
-      </main>
+      <div class="right">
+        <h3>PROFILE</h3>
+        <p>
+          I am a programmer and system administrator with experience in database administration, website design and Server Administration. 
+          I also have extensive expertise in computer networking, including network configuration, server management, and system security.
+        </p>
 
-      <aside>
-        <div class="card">
-          <h2>Contact</h2>
-          <div style="margin-top:8px">📞 0852 5751 0992</div>
-          <div style="margin-top:6px">✉️ <a href="mailto:mwarsono21@gmail.com">mwarsono21@gmail.com</a></div>
-          <div style="margin-top:6px">🌐 <a href="https://uccritae.github.io/" target="_blank" rel="noopener">uccritae.github.io</a></div>
-          <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
-        </div>
+        <h3>SKILL</h3>
+        <ul>
+          <li>Web Development (PHP, CodeIgniter, Laravel, JavaScript, Vue.js, Flutter)</li>
+          <li>Database Administration (MySQL, MariaDB, PostgreSQL)</li>
+          <li>API Development and Integration (RESTful APIs, JSON)</li>
+          <li>Network Configuration and Management (MikroTik, Cisco)</li>
+          <li>Server Administration (Linux/Ubuntu, Apache, Nginx)</li>
+          <li>System Security and Monitoring (Firewall, Wazuh, Malware Detection)</li>
+          <li>Version Control (Git, GitHub)</li>
+          <li>Problem Solving and Analytical Thinking</li>
+          <li>Team Collaboration and Project Management</li>
+        </ul>
 
-        <div class="card" style="margin-top:16px">
-          <h2>Skills</h2>
-          <div class="skills" style="margin-top:8px">
-            <span class="skill">PHP</span>
-            <span class="skill">CodeIgniter</span>
-            <span class="skill">Laravel</span>
-            <span class="skill">Flutter</span>
-            <span class="skill">Vue.js</span>
-            <span class="skill">REST API</span>
-            <span class="skill">MySQL</span>
-            <span class="skill">Keamanan Web</span>
-            <span class="skill">MikroTik</span>
-            <span class="skill">Cisco</span>
-          </div>
-        </div>
+        <h3>PROJECTS</h3>
+        <p class="bold">IKIP PGRI Bojonegoro (2011 – Present)</p>
+        <ul class="projects">
+          <li>Built an Android-based Academic Information System application using Flutter and CodeIgniter 3 API.</li>
+          <li>Performed maintenance and developed new features for the Academic Information System application.</li>
+        </ul>
 
-        <div class="card" style="margin-top:16px">
-          <h2>Certificate</h2>
-          <ul style="margin-top:8px">
-            <li>MikroTik Certified Network Associate (MTCNA) – MikroTik Academy, 2019</li>
-            <li>AWS Technical Essentials & Architecting on AWS Associate – Trainocate Indonesia, 2020</li>
-            <li>Security Monitoring Dengan Wazuh Batch 2 – Taalenta, 2024</li>
-          </ul>
-        </div>
-      </aside>
+        <p class="bold">DISPENDUK CAPIL Bojonegoro (2023 – 2024)</p>
+        <ul class="projects">
+          <li>Developed the Panah Srikandi application to support population administration services.</li>
+          <li>Integrated the application system with automated notifications via WhatsApp Gateway.</li>
+        </ul>
+      </div>
     </div>
 
     <footer>
-      Dibuat untuk GitHub Pages — simpan file ini sebagai <code>index.html</code> di repo <code>uccritae.github.io</code> untuk menayangkan halaman.
+      © 2025 Muhamad Warsono — All Rights Reserved
     </footer>
   </div>
 </body>
